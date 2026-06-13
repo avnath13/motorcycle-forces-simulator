@@ -43,6 +43,11 @@ Every module reads the same running bike. Live gauges (speed, lean, lateral-g, g
 
 ![Cornering cockpit](docs/screenshots/01-cockpit.png)
 
+### Static weight distribution
+Before anything moves, the bike at rest is a balancing act. Weight pulls down through the centre of gravity while the ground pushes up through the two contact patches; the side and rear views show the load split and the lean angle at which it tips over. Raise the CoG or shift weight forward and the front/rear load gauges respond live.
+
+![At rest weight distribution](docs/screenshots/11-at-rest.png)
+
 ### The traction circle
 The idea that ties it all together: one grip budget shared between braking/accelerating and turning. Ride around and the dot traces your grip usage; cross the circle and you slide.
 
@@ -72,6 +77,11 @@ A revision deck for each module: flip the card, grade yourself, track how many y
 Hand-split keyboard (throttle/brake on the right, lean/clutch/gears on the left) plus on-screen controls. Feather the clutch through the friction zone, shift a 6-speed box (gear changes auto-blip the clutch), or flip on **Assist** for auto-clutch and no stalling.
 
 ![Ride controls](docs/screenshots/07-controls.png)
+
+### Riding conditions
+Surface, gradient and load feed the live model everywhere. Wet, gravel and ice shrink the grip circle so you slide sooner; uphill saps drive while downhill adds it; a pillion or luggage raises the mass and the centre of gravity, changing balance and weight transfer across every screen.
+
+![Riding conditions panel](docs/screenshots/10-conditions.png)
 
 ### Dark and light themes
 A minimal, monospace, single-accent interface, with both a dark cockpit and a clean daylight theme. Shown here in the dark theme.
