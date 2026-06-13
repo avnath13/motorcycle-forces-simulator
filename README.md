@@ -92,7 +92,9 @@ A minimal, monospace, single-accent interface, with both a dark cockpit and a cl
 
 ## 🚀 Run it
 
-**Quickest:** open **`MotoForcesSimulator.html`** in any modern browser. It's the whole app in one offline file.
+**Quickest:** open the live site at **[motorcycle-forces-simulator.vercel.app](https://motorcycle-forces-simulator.vercel.app/)**.
+
+**Offline / no install:** open **`MotoForcesSimulator.html`** in any modern browser. It's the whole app in one self-contained file.
 
 **From source (for development):**
 
