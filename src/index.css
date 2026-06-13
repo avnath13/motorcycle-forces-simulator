@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 89%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 67 96% 52%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 0 0% 88%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 86%;
+    --muted-foreground: 0 0% 33%;
+    --accent: 67 96% 52%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 78%;
+    --input: 0 0% 78%;
+    --ring: 67 96% 52%;
+    --radius: 1rem;
+
+    --ink: #0c0c0c;
+    --hair: #c4c4c4;
+    --dial-track: #cdcdcd;
+    --yellow: #e2fb0e;
+    --stage-bg: #e6e6e6;
+    --grid: rgba(0,0,0,0.05);
+  }
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 96%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 93%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 67 96% 52%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 67 96% 52%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 22%;
+    --ring: 67 96% 52%;
+
+    --ink: #f0f0f0;
+    --hair: #2a2a2a;
+    --dial-track: #2c2c2c;
+    --yellow: #e2fb0e;
+    --stage-bg: #e6e6e6;
+    --grid: rgba(0,0,0,0.05);
+  }
+}
+
+@layer base {
+  * { border-color: hsl(var(--border)); }
+  html, body, #root { height: 100%; }
+  body {
+    margin: 0;
+    color: hsl(var(--foreground));
+    background: hsl(var(--background));
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .card-flat {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: 18px;
+  }
+  .stage {
+    background: var(--stage-bg);
+    border: 1px solid hsl(var(--border));
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hair { border-color: var(--hair); }
+  .eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: 10.5px; font-weight: 600; }
+  .label-cap { letter-spacing: .14em; text-transform: uppercase; }
+  .num { font-variant-numeric: tabular-nums; font-weight: 700; letter-spacing: -0.01em; }
+  /* minimal range slider */
+  input[type=range].mono-range { -webkit-appearance: none; appearance: none; height: 2px; background: var(--hair); border-radius: 2px; }
+  input[type=range].mono-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); border: 3px solid hsl(var(--card)); box-shadow: 0 0 0 1px var(--hair); cursor: pointer; }
+  input[type=range].mono-range::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--ink); border: 3px solid hsl(var(--card)); cursor: pointer; }
+}
