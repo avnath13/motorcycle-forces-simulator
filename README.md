@@ -1,5 +1,7 @@
 # 🏍️ Motorcycle Forces Simulator
 
+**▶️ Live demo: [motorcycle-forces-simulator.vercel.app](https://motorcycle-forces-simulator.vercel.app/)**
+
 An interactive, real-time simulator for understanding the **physics of riding a motorcycle**, and for practising the manoeuvres in the **UK Module 1 test**. You ride a single shared dynamics model with throttle, brake, clutch, gears and lean, and every screen is a different "lens" on what the forces are doing.
 
 Built as a learning aid for someone working toward a full UK motorcycle licence, but useful for any rider who wants intuition for *why* the bike behaves the way it does.
