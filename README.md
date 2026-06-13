@@ -72,15 +72,9 @@ Hand-split keyboard (throttle/brake on the right, lean/clutch/gears on the left)
 ![Ride controls](docs/screenshots/07-controls.png)
 
 ### Dark and light themes
-A minimal, monospace, single-accent interface in both a dark cockpit and a clean daylight theme.
-
-**Dark**
+A minimal, monospace, single-accent interface, with both a dark cockpit and a clean daylight theme. Shown here in the dark theme.
 
 ![Dark theme](docs/screenshots/09-dark-theme.png)
-
-**Light**
-
-![Light theme](docs/screenshots/08-light-theme.png)
 
 ---
 
@@ -100,8 +94,8 @@ npm run build    # production build to dist/
 
 | Input | Keyboard | On-screen |
 |-------|----------|-----------|
-| Throttle | `Up` | Hold **Throttle** |
-| Brake | `Down` / `Space` | Hold **Brake** |
+| Throttle | `W` | Hold **Throttle** |
+| Brake | `S` / `Space` | Hold **Brake** |
 | Lean / steer | `A` / `D` | Lean slider |
 | Clutch | `Shift` (hold to feather) | Clutch slider |
 | Gears | `E` up / `Q` down | up / down |
@@ -113,7 +107,7 @@ Click anywhere on the page first so it has keyboard focus.
 
 ## 🛠️ Tech
 
-- **React 18 + TypeScript**, **Tailwind CSS**, built with **Vite**
+- **React 19 + TypeScript**, **Tailwind CSS**, built with **Vite**
 - A custom real-time dynamics engine (no game library) running on `requestAnimationFrame`
 - All graphics are hand-drawn **SVG**: bikes, gauges, force vectors, the pad and the HUD
 - Web Audio for the engine note and tyre scrub
