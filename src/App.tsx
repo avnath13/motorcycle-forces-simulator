@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider, ThemeToggle } from "@/theme";
 import { RideProvider, useRide } from "@/sim/RideContext";
 import { Hud } from "@/components/Hud";
@@ -121,5 +122,12 @@ function Shell() {
 }
 
 export default function App() {
-  return <ThemeProvider><RideProvider><Shell /></RideProvider></ThemeProvider>;
+  return (
+    <ThemeProvider>
+      <RideProvider>
+        <Shell />
+        <Analytics />
+      </RideProvider>
+    </ThemeProvider>
+  );
 }
